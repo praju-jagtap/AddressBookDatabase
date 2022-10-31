@@ -30,3 +30,8 @@ SELECT * FROM ADDRESS_BOOK_SERVICE;
 
 UPDATE ADDRESS_BOOK_SERVICE SET StateName= 'Mumbai',Zip='123456',Phone='7002285211',Email='sayalip12@gmail.com' WHERE FirstName='Sayali';
 SELECT * FROM ADDRESS_BOOK_SERVICE;
+
+---------------UC5-Deleating a person using Name------------
+
+DELETE FROM ADDRESS_BOOK_SERVICE WHERE FirstName= 'snehal';
+SELECT * FROM ADDRESS_BOOK_SERVICE;
