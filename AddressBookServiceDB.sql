@@ -40,3 +40,8 @@ SELECT * FROM ADDRESS_BOOK_SERVICE;
 
 Select * from ADDRESS_BOOK_SERVICE WHERE City='Mumbai';
 Select * from ADDRESS_BOOK_SERVICE WHERE StateName='Maharashtra';
+
+------------UC7-Size of Address book by City or State------------
+
+Select COUNT(City) as City_Count FROM ADDRESS_BOOK_SERVICE;
+Select COUNT(StateName) as State_Count FROM ADDRESS_BOOK_SERVICE;
