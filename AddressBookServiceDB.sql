@@ -51,7 +51,12 @@ Select COUNT(StateName) as State_Count FROM ADDRESS_BOOK_SERVICE;
 SELECT * FROM ADDRESS_BOOK_SERVICE ORDER BY(FirstName);
 
 -----------UC9-Ability to identify each Address Book with name and Type---------
+
 alter table ADDRESS_BOOK_SERVICE  add AddressBook_Name varchar(30),AddressBook_Type varchar(30);
 update ADDRESS_BOOK_SERVICE set AddressBook_Name = 'Family address book', AddressBook_Type = 'Family' where FirstName='Prajakta';
 update ADDRESS_BOOK_SERVICE set AddressBook_Name = 'Friends address book', AddressBook_Type = 'Friends' where FirstName='Sanket';
 select * from ADDRESS_BOOK_SERVICE;
+
+----------UC10-Ability to get number of contact persons using count type----------
+
+select count(AddressBook_Type) from ADDRESS_BOOK_SERVICE where AddressBook_Type = 'Family';
